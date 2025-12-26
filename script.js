@@ -1,22 +1,7 @@
-/* ===== FLOW CONTROL ===== */
-function go(n){
-  document.querySelectorAll(".screen").forEach(s=>s.classList.remove("active"));
-  document.getElementById("s"+n).classList.add("active");
-}
-
-/* ===== STEP 3 WAIT BUTTON ===== */
-setTimeout(()=>{
-  let b=document.getElementById("waitBtn");
-  if(b){
-    b.disabled=false;
-    b.innerText="I'm Ready 🌸";
-    b.onclick=()=>go(4);
-  }
-},5000);
-
-/* ===== TYPEWRITER FULL MESSAGE ===== */
-const text=`Sun yaar…
-Mujhe pata hai humare beech aaj-kal kuch theek nahi chal raha,
+document.addEventListener("DOMContentLoaded", () => {
+    const screens = document.querySelectorAll(".screen");
+    const longMessage = `Sun yaar…
+Mujhe pata hai humare beech aaj‑kal kuch theek nahi chal raha,
 shayad kuch hai bhi nahi.
 Par main bas itna chahta hoon ki tu jo chahe, wo tujhe mil jaaye.
 Chahe main teri chahne wali list mein hoon ya nahi,
@@ -27,26 +12,126 @@ Ek chhoti si meetup, achanak se…
 aur tu, main, pata nahi kaise ek random GC mein aa gaya tha.
 Tab socha bhi nahi tha ki wahan koi aisa hoga
 jo mere saath 1.5 saal tak chalega.
+
 Aur haan yaar… 1.5 saal ho gaye,
 pata hi nahi chala.
-
 Tujhe wo date yaad hai?
 June 17 — jab tu mujhe mili thi,
 jab humari baatein start hui thi.
 
 Wo song yaad hai tujhe?
+Ruk… uski kuch lines aaj bhi mujhe yaad hain:
 “Haan, maanga jo mera hai, jaata kya tera hai?
 Maine kaun si tujhse jannat maang li?
 Kaisa Khuda hai tu, bas naam ka hai tu
 Rabba, jo teri itni si bhi na chali”
 
+Ye lines aaj tak mere saath hain,
+shayad kabhi bhool bhi nahi paunga.
+
 Phir meri life mein wo breakup hua…
 jab mujhe dhokha mila.
 Us time tu hi thi jo mere saath thi.
-Dheere-dheere baatein hui, dosti hui,
+Dheere‑dheere baatein hui, dosti hui,
 aur pata hi nahi chala kab kya ho gaya.
-Sach bolun… mujhe pyaar ho gaya tha.
-Aur shayad aaj bhi hai.
+
+Sach bolun, mujhe kaafi options mile the
+dubara relationship mein jaane ke liye.
+Rakhi, Sanchita… aur bhi the,
+naam tak yaad nahi.
+Ek Priya thi — sirf friend hi rakha use,
+aur wo mujhe tujhse door karna chahti thi,
+par kar nahi paayi.
+
+Phir aayi Sejal 😂
+shayad tu use kabhi na bhool paaye.
+Uski wajah se kitne kalesh hue the humare beech.
+Tu bahut gussa hui thi,
+aur tujhe manane mein maine bhi bahut papad bele the 😅
+
+Par phir bhi main tujhse alag nahi ho paaya.
+Pata nahi tere andar aisa kya tha
+jo mujhe tujhse door jaane hi nahi deta.
+Meri ex ne bhi try kiya wapas aane ka,
+par tab tak meri life mein tu aa chuki thi.
+
+Humari baatein itni badh gayi thi
+ki mujhe pata hi nahi chala
+kab dosti se love wali feeling aa gayi.
+Tujhe aayi ya nahi, ya tu bata nahi paayi — mujhe nahi pata.
+Par mujhe aayi thi.
+
+Bahut mahine tak maine nahi bataya.
+Phir ek din pata nahi kaunsa moment tha
+jab maine apni feelings express kar di…
+aur wahi se sab badal gaya.
+Log bolte hain na,
+agar friendship mein ek ko pyaar ho jaaye
+to friendship bhi nahi bachi rehti.
+Shayad wahi hua.
+Agar nahi hota to aaj hum aise nahi hote.
+
+Yaad hai wo din?
+Ghanto‑ghanto baatein,
+tu mujhe sone nahi deti thi 😂
+main din mein so jata tha
+aur tu call pe call karke pareshaan karti thi.
+Bahut achhe din the yaar.
+
+Shayad kisi ki nazar lag gayi.
+Tu kehti thi na “nazar is real”
+aur main mazaak udata tha.
+Aaj main bhi maanta hoon —
+nazar is real.
+
+Phir tera college jaana…
+aur ek‑ek mahina wait karna
+ki kab tera message ya call aayega 🫠
+Mujhe yaad hai kaise
+maine tere bina ek‑ek din nikala 🙂❤️‍🩹
+
+Bahut mushkil tha,
+par phir jab mahine baad teri call aati…
+kasam se, wo feeling koi samajh nahi sakta.
+Pata nahi pyaar tha ya attachment,
+waise bhi pyaar aur attachment mein farq hi kya hota hai?
+Pyaar mein insaan wait karta hai,
+attachment mein pagal ho jata hai.
+Shayad main dono tha.
+
+Main 1‑2 mahine,
+phir 5 mahine bhi wait karta raha
+sirf ek baar baat karne ke liye.
+Shayad itna wait karna pyaar nahi kehlata,
+abhi aur wait karna padega proof dene ke liye.
+
+Tu kehti thi na
+“online kaise pyaar ho sakta hai bina mile?”
+Mere paas answer nahi hai.
+Bas itna pata hai —
+tere naam se mujhe pyaar hai,
+jise sunte hi meri heartbeat tez ho jaati hai.
+Teri awaaz se pyaar hai,
+jise sunte hi sab normal ho jata hai.
+
+Mujhe poori ki poori tu pasand hai.
+Teri aankhein…
+shayad main tujhe pasand na hoon,
+shayad mera face bhi nahi.
+
+Par jitna ho sakta hai
+main kar raha hoon,
+aur karta ranguna.
+Abhi mujhe bahut kuch paana hai —
+ek achhi job,
+tere paas hi thoda door ek ghar,
+aur last mein… tujhe.
+
+Agar tu saath rahi
+to main sab karke dikhaunga.
+Par agar tu aise hi hurt karti rahi
+to sach mein main door chala jaunga…
+bhool phir bhi nahi paunga.
 
 Kuch aisi rahi humari kahani
 2024 se 2025 tak.
@@ -54,26 +139,75 @@ Agar hum saath rahe
 to 2026 mein aur bhi achhe moments banayenge 🤍
 
 Ly ❤️‍🩹
+Aur haan…
+sorry thoda bhatak gaya,
+aadat hai yaar topic se bhatakne ki 😅
+
 Happpppppyyyy Birthday meri Shraddha 🎂❤️
 Again and again.`;
 
-/* TYPEWRITER LOGIC */
-let i=0,done=false;
-const obs=new MutationObserver(()=>{
-  if(document.getElementById("s6").classList.contains("active") && !done){
-    done=true;
-    (function type(){
-      if(i<text.length){
-        document.getElementById("typeText").innerText+=text.charAt(i++);
-        setTimeout(type,35); // typing speed 35ms
-      }
-    })();
-  }
-});
-obs.observe(document.body,{subtree:true,attributes:true});
+    function showScreen(index) {
+        screens.forEach(s => s.classList.remove("active"));
+        screens[index].classList.add("active");
+    }
 
-/* ===== END SHOW ===== */
-function endShow(){
-  document.getElementById("s7").classList.add("fade");
-  setTimeout(()=>go(8),1500); // cake show
-}
+    // Step 1 & 2: Unlock Logic
+    document.getElementById("unlock-btn").addEventListener("click", () => {
+        showScreen(1); // Go to Step 3 (Loading)
+        startTimer();
+    });
+
+    // Step 3: Wait Timer Logic
+    function startTimer() {
+        const btn = document.getElementById("timer-next-btn");
+        let seconds = 3;
+        const countdown = setInterval(() => {
+            seconds--;
+            if (seconds <= 0) {
+                clearInterval(countdown);
+                btn.classList.remove("disabled");
+                btn.disabled = false;
+                btn.innerText = "Click to Unlock Surprise ✨";
+            }
+        }, 1000);
+    }
+
+    document.getElementById("timer-next-btn").addEventListener("click", () => {
+        showScreen(2); // Step 4: Greeting
+    });
+
+    // Step 4: Ready Button
+    document.getElementById("ready-btn").addEventListener("click", () => {
+        showScreen(3); // Step 5: Memories
+        startTypewriter();
+    });
+
+    // Step 5: Typewriter Effect
+    function startTypewriter() {
+        const textElement = document.getElementById("typewriter-text");
+        const nextBtn = document.getElementById("memories-next-btn");
+        let i = 0;
+        
+        function type() {
+            if (i < longMessage.length) {
+                textElement.innerHTML += longMessage.charAt(i);
+                i++;
+                // Auto-scroll as text types
+                textElement.scrollTop = textElement.scrollHeight;
+                setTimeout(type, 40); // Typing speed in ms
+            } else {
+                nextBtn.classList.remove("hidden");
+            }
+        }
+        type();
+    }
+
+    document.getElementById("memories-next-btn").addEventListener("click", () => {
+        showScreen(4); // Step 6: Mini Wish
+    });
+
+    // Step 6: End Button
+    document.getElementById("end-btn").addEventListener("click", () => {
+        showScreen(5); // Step 7: Final Cake
+    });
+});
